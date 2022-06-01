@@ -42,8 +42,8 @@ public class MainController {
         postList.add(userPost2);
         postList.add(userPost3);
     }
-    private User user;
     private List<Post> postList = new ArrayList<>();
+    private User user;
 
     @GetMapping("/")
     public String main(Model model) {
