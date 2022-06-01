@@ -11,5 +11,10 @@
         <module name="thymeleaf.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="thymeleaf" target="11" />
+      <module name="thymeleaf.main" target="11" />
+      <module name="thymeleaf.test" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
