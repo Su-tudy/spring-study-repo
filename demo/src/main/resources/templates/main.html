@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:insert="~{header :: copy}"></div>
+
+<table border="1" th:classappend="${true} ? mycss">
+    <tr th:each="postlist : ${postlist}">
+        <td th:text="${postlist.username}" th:unless="${postlist.title}==안녕하세요2"></td>
+        <td th:text="${postlist.title}" th:unless="${postlist.title}==안녕하세요2"></td>
+        <td th:text="${postlist.content}" th:unless="${postlist.title}==안녕하세요2"></td>
+
+    </tr>
+</table>
+
+<div th:insert="~{footer :: copy}"></div>
+</body>
+</html>
