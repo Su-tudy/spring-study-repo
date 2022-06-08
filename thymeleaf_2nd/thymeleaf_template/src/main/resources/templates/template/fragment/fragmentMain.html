@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+ </head>
+ <body>
+
+    <div th:insert="~{template/fragment/header :: header}"></div>
+
+    <div th:insert="~{template/fragment/nav :: nav}"></div>
+
+    <table border="1" >
+     <tr th:each="PostList : ${PostList}" th:if="${PostList.title}!='안녕하세요2'">
+
+         <td th:text="${PostList.username}"></td>
+         <td th:text="${PostList.title}"></td>
+         <td th:text="${PostList.content}" ></td>
+
+     </tr>
+    </table>
+
+    <div th:insert="~{template/fragment/footer :: footer}"></div>
+
+
+ </body>
+</html>
