@@ -33,3 +33,12 @@
 <img src="./images/2_assignment_view.png">
 
 ---
+
+# Su-tudy 3회차 - HTTP
+
+2022년 6월 8일
+
+참여자 : 김동열, 윤성철, 조정빈
+
+3회차 리더 : 윤성철
+---
