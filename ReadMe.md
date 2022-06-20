@@ -189,3 +189,11 @@ http://localhost:8080/login?username=sungchul&userage=20
 
 ## 스프링 부트의 등장
 > 빌드 결과(Jar)에 WAS 서버 포함 -> 빌드 배포 단순화
+
+### 4회차 주요 내용
+* request.getParameter()로 post, get 방식에 상관없이 조회할 수 있다.
+> 클라이언트(웹 브라우저)입장에서는 두 방식에 차이가 있지만, 서버입장에서는 둘의 형식이 동일하다.
+
+##### content-type
+* HTTP 메시지 바디의 데이터 형식을 지정한다.
+> **POST HTML FORM 형식**으로 데이터를 전달하면 HTTP 메세지 바디에 해당 데이터를 포함해서 보내기 때문에 바디에 포함된 데이터가 어떤 형식인지 content-type을 꼭 지정해야한다!
