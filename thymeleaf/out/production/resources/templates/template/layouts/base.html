@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html th:fragment="layout (content, link)"
         xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -13,5 +14,21 @@
 
 
 <div th:replace="template/layouts/footer :: footer">푸터</div>
+=======
+<html   th:fragment="layout (content, link)"
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="${link}"></th:block>
+</head>
+<body>
+<div th:replace="~{template/layouts/header :: header}"></div>
+<div th:replace="~{template/layouts/nav :: nav}"></div>
+
+
+<div th:replace="${content}"></div>
+
+
+<div th:replace="~{template/layouts/footer :: footer}"></div>
+>>>>>>> d436af3d67e6bd38ee5be089814a90a46ae5837c
 </body>
 </html>
