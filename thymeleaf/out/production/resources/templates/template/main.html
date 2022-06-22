@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html th:replace="~{template/layouts/base :: layout(~{::content},~{::link})}"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/myCss.css}">
+</head>
+<body>
+<content th:classappend="contentcolor">
+    <table border="1">
+        <tr th:each="list : ${list}" th:if="${list.title != '안녕하세요2'}">
+            <td th:text="${list.userName}">유저이름</td>
+            <td th:text="${list.title}">제목</td>
+            <td th:text="${list.content}">내용</td>
+        </tr>
+    </table>
+</content>
+</body>
+</html>
