@@ -52,8 +52,7 @@
 아래와 같이 만들어주세요.
 
 **요구사항**
-- Query Parameter로 이름, 나이를 받습니다.
-  - ex) `localhost:8080?username=홍길동&age=20
+- Query String 혹은 form으로 이름, 나이를 받습니다.
 - HttpServlet를 상속 받아 회원가입을 진행시켜주세요.
 - GenericServlet를 상속받아 회원가입을 진행시켜주세요.
 - 회원가입에 필요한 항목은 이름, 나이 입니다.
