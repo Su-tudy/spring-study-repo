@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-// urlPattens = "/memberjoinhttpservlet"
+// urlPatterns = "/memberjoinhttpservlet"
 public class MemberJoinHttpServlet extends HttpServlet {
 
 }

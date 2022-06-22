@@ -7,7 +7,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
-// urlPattens = "/memberjoingenericservlet"
+// urlPatterns = "/memberjoingenericservlet"
 public class MemberJoinGenericServlet extends GenericServlet {
 
 }
