@@ -1,4 +1,4 @@
-package gdsc.syu.study.Servlet;
+package hello.servlet.basic.homeWork;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
@@ -6,6 +6,10 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
+
+/**
+ * http://localhost:8080/sign-up-generic?username=Dongyeol%20Kim&age=25
+ */
 
 @WebServlet(name = "signUpGenericServlet", urlPatterns = "/sign-up-generic")
 public class SignUpGenericServlet extends GenericServlet {
@@ -24,6 +28,6 @@ public class SignUpGenericServlet extends GenericServlet {
             System.out.println("회원 나이 : " + age);
         }
 
-        response.getWriter().write("콘솔 창 확인.");
+        response.getWriter().write("Confirm console.");
     }
 }
