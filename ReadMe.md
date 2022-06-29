@@ -43,7 +43,7 @@
 
 2022년 6월 22일
 
-참여자 : 
+참여자 : 김동열, 박현서, 윤성철, 조정빈 
 
 4회차 리더 : 박현서
 
@@ -65,4 +65,43 @@
 회원 가입이 되었습니다.
 회원 이름 : 홍길동
 회원 나이 : 20
+```
+# Su-tudy 5회차 - HttpServlet2
+
+2022년 6월 29일
+
+참여자 : 김동열, 박현서, 윤성철, 조정빈 
+
+5회차 발표자 : 신지민
+
+## 5회차 과제  🎉
+
+아래와 같이 만들어주세요.
+
+**요구사항**
+- basic패키지에 있는 lombok_test를 lombok형식으로 맞춰 코드를 간결하게 만들어주세요!!
+<br>
+
+아래는 콘솔 출력값 입니다.
+```
+package gdsc.syu.study.thymeleaf.basic;
+
+public class lombok_test {
+    private String username;
+    private String userDept;
+    private int userID;
+    public String getUsername(){
+        return username;
+    }
+
+    public void setUserDept(String userDept) {
+        this.userDept = userDept;
+    }
+
+    public int getUserID() {
+        return userID;
+    }
+}
+
+
 ```
