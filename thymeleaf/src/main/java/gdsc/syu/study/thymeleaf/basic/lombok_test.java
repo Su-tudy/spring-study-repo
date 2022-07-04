@@ -1,18 +1,12 @@
 package gdsc.syu.study.thymeleaf.basic;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
 public class lombok_test {
     private String username;
     private String userDept;
     private int userID;
-    public String getUsername(){
-        return username;
-    }
 
-    public void setUserDept(String userDept) {
-        this.userDept = userDept;
-    }
-
-    public int getUserID() {
-        return userID;
-    }
 }
