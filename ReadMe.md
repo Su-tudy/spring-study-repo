@@ -293,7 +293,8 @@ public class lombok_test {
 ### 예시
 * MvcMemberSaveServlet 中
 ![img.png](img.png)
-새로운 viewPath로 forward할 경로 바꿈
+
+  새로운 viewPath로 forward할 경로 바꿈
 
 
 * login-form.jsp (로그인 폼은 자유 양식)
@@ -316,8 +317,11 @@ public class lombok_test {
 
 * 결과화면
     * 로그인 성공 화면
-![img_1.png](img_1.png)
+
+  ![img_1.png](img_1.png)
+
     * 로그인 실패 화면
-![img_2.png](img_2.png)
+
+  ![img_2.png](img_2.png)
    
-##💪화이팅
+## 💪화이팅
