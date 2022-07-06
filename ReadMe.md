@@ -30,9 +30,14 @@
 - `postList` 값으로 다음과 같이 넘어왔습니다.
   - `username`, `title`, `content`
   - 테이블 중에 title이 `안녕하세요2`인 부분을 if문을 사용해 제거하여 주세요.
-<img src="./images/2_assignment_view.png">
+    <img src="./images/2_assignment_view.png">
 
 ---
+
+<br>
+<br>
+<br>
+<br>
 
 # Su-tudy 3회차 - HTTP
 
@@ -189,3 +194,130 @@ http://localhost:8080/login?username=sungchul&userage=20
 
 ## 스프링 부트의 등장
 > 빌드 결과(Jar)에 WAS 서버 포함 -> 빌드 배포 단순화
+
+### 4회차 주요 내용
+* request.getParameter()로 post, get 방식에 상관없이 조회할 수 있다.
+> 클라이언트(웹 브라우저)입장에서는 두 방식에 차이가 있지만, 서버입장에서는 둘의 형식이 동일하다.
+
+##### content-type
+* HTTP 메시지 바디의 데이터 형식을 지정한다.
+> **POST HTML FORM 형식**으로 데이터를 전달하면 HTTP 메세지 바디에 해당 데이터를 포함해서 보내기 때문에 바디에 포함된 데이터가 어떤 형식인지 content-type을 꼭 지정해야한다!
+
+# Su-tudy 4회차 - HttpServlet
+
+2022년 6월 22일
+
+참여자 : 김동열, 박현서, 윤성철, 조정빈
+
+4회차 리더 : 박현서
+
+## 4회차 과제  🎉
+
+아래와 같이 만들어주세요.
+
+**요구사항**
+- Query String 혹은 form으로 이름, 나이를 받습니다.
+- HttpServlet를 상속 받아 회원가입을 진행시켜주세요.
+- GenericServlet를 상속받아 회원가입을 진행시켜주세요.
+- 회원가입에 필요한 항목은 이름, 나이 입니다.
+- 회원가입 성공은 콘솔에 이름, 나이 출력 유무로 구분합니다.
+
+<br>
+
+아래는 콘솔 출력값 입니다.
+```
+회원 가입이 되었습니다.
+회원 이름 : 홍길동
+회원 나이 : 20
+```
+# Su-tudy 5회차 - HttpServlet2
+
+2022년 6월 29일
+
+참여자 : 김동열, 박현서, 윤성철, 조정빈
+
+5회차 발표자 : 신지민
+
+## 5회차 과제  🎉
+
+아래와 같이 만들어주세요.
+
+**요구사항**
+- basic패키지에 있는 lombok_test를 lombok형식으로 맞춰 코드를 간결하게 만들어주세요!!
+  <br>
+
+아래는 콘솔 출력값 입니다.
+```
+package gdsc.syu.study.thymeleaf.basic;
+
+public class lombok_test {
+    private String username;
+    private String userDept;
+    private int userID;
+    public String getUsername(){
+        return username;
+    }
+
+    public void setUserDept(String userDept) {
+        this.userDept = userDept;
+    }
+
+    public int getUserID() {
+        return userID;
+    }
+}
+
+
+```
+
+
+------
+# Su-tudy 6회차 - Servlet, JSP, MVC
+
+2022년 7월 6일
+
+참여자 : 박현서, 윤성철, 조정빈, 신지민
+
+6회차 발표자 : 김동열
+-----------
+
+## 📚6회차 과제📚
+
+**요구사항**
+1. 회원 등록하고 저장하는 기존 회원 저장 폼을 활용하여 회원 가입하기
+    * 회원 가입에 필요한 정보 = 이름, 나이
+2. 회원가입이 버튼을 누르면 로그인 페이지로 이동
+3. 로그인
+4. 로그인 후 로그인이 완료된 상태 캡쳐 (형시 자유 ex.log출력, 로그인 완료 페이지 등)
+
+###예시
+* MvcMemberSaveServlet 中
+![img.png](img.png)
+새로운 viewPath로 forward할 경로 바꿈
+
+
+* login-form.jsp (로그인 폼은 자유 양식)
+```
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/homework/login" method="post">
+    이름: <input type="text" name="username" />
+    나이: <input type="text" name="age" />
+    <button type="submit">로그인</button>
+</form>
+</body>
+</html>
+```
+
+* 결과화면
+    * 로그인 성공 화면
+![img_1.png](img_1.png)
+    * 로그인 실패 화면
+![img_2.png](img_2.png)
+   
+##💪화이팅
