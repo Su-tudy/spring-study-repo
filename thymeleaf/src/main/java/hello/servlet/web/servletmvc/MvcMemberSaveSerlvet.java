@@ -28,8 +28,8 @@ public class MvcMemberSaveSerlvet extends HttpServlet {
         //Model에 데이터 보관.
         request.setAttribute("member", member);
 
-//        String viewPath = "/WEB-INF/views/save-result.jsp";
-        String viewPath = "/WEB-INF/views/login-form.jsp"; //과제용
+        String viewPath = "/WEB-INF/views/save-result.jsp";
+//        String viewPath = "/WEB-INF/views/login-form.jsp"; //과제용
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
         dispatcher.forward(request,response);
     }
