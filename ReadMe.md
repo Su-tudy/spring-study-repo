@@ -290,7 +290,7 @@ public class lombok_test {
 3. 로그인
 4. 로그인 후 로그인이 완료된 상태 캡쳐 (형시 자유 ex.log출력, 로그인 완료 페이지 등)
 
-###예시
+### 예시
 * MvcMemberSaveServlet 中
 ![img.png](img.png)
 새로운 viewPath로 forward할 경로 바꿈
