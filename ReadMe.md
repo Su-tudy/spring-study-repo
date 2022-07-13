@@ -105,3 +105,60 @@ public class lombok_test {
 
 
 ```
+
+------
+# Su-tudy 6회차 - Servlet, JSP, MVC
+
+2022년 7월 6일
+
+참여자 : 박현서, 윤성철, 조정빈, 신지민
+
+6회차 발표자 : 김동열
+-----------
+
+## 📚6회차 과제📚
+
+**요구사항**
+1. 회원 등록하고 저장하는 기존 회원 저장 폼을 활용하여 회원 가입하기
+    * 회원 가입에 필요한 정보 = 이름, 나이
+2. 회원가입이 버튼을 누르면 로그인 페이지로 이동
+3. 로그인
+4. 로그인 후 로그인이 완료된 상태 캡쳐 (형시 자유 ex.log출력, 로그인 완료 페이지 등)
+
+### 예시
+* MvcMemberSaveServlet 中
+![img.png](./images/6_assignment_view_1.png)
+
+  새로운 viewPath로 forward할 경로 바꿈
+
+
+* login-form.jsp (로그인 폼은 자유 양식)
+```
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/homework/login" method="post">
+    이름: <input type="text" name="username" />
+    나이: <input type="text" name="age" />
+    <button type="submit">로그인</button>
+</form>
+</body>
+</html>
+```
+
+* 결과화면
+    * 로그인 성공 화면
+
+  ![img_1.png](./images/6_assignment_view_2.png)
+
+    * 로그인 실패 화면
+
+  ![img_2.png](./images/6_assignment_view_3.png)
+   
+## 💪화이팅
+Footer
+
