@@ -160,5 +160,23 @@ public class lombok_test {
   ![img_2.png](./images/6_assignment_view_3.png)
    
 ## 💪화이팅
-Footer
 
+
+# Su-tudy 7회차 - Frontcontroller(v1-v3)
+
+2022년 7월 14일
+
+참여자 : 박현서, 윤성철, 조정빈, 신지민
+
+6회차 발표자 : 조정빈
+-----------
+## 7회차 과제  🎉
+
+**요구사항**
+- model이 추가된 v3구조를 사용해주세요.
+- 회원 등록에 사용되는 정보:username,nickname,birth,age
+- 등록한 정보가 회원목록에 나오게 해주세요.
+
+
+
+Footer
