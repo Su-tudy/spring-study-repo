@@ -176,8 +176,16 @@ public class lombok_test {
 - model이 추가된 v3구조를 사용해주세요.
 - 회원 등록에 사용되는 정보:username,nickname,birth,age
 - 등록한 정보가 회원목록에 나오게 해주세요.
+- 회원 등록과 회원목록은 index.html을 통해 확인할 수 있게 해주세요.
 
-*결과 화면
+
+
   *회원 등록 화면
-![화면 캡처 2022-07-14 015738](https://user-images.githubusercontent.com/74054487/178789893-2217d2e8-2e41-40d6-9292-6ad12c830188.png)
+  
+  ![화면 캡처 2022-07-14 015738](https://user-images.githubusercontent.com/74054487/178789893-2217d2e8-2e41-40d6-9292-6ad12c830188.png)
+
+  *index.html 화면
+  
+  ![화면 캡처 2022-07-14 020504](https://user-images.githubusercontent.com/74054487/178790658-ec18079c-9a4b-4623-afbc-a32f5d062b4a.png)
+
 
