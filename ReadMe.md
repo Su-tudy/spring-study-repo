@@ -43,7 +43,7 @@
 
 2022년 6월 22일
 
-참여자 : 
+참여자 : 김동열, 박현서, 윤성철, 조정빈 
 
 4회차 리더 : 박현서
 
@@ -66,3 +66,99 @@
 회원 이름 : 홍길동
 회원 나이 : 20
 ```
+# Su-tudy 5회차 - HttpServlet2
+
+2022년 6월 29일
+
+참여자 : 김동열, 박현서, 윤성철, 조정빈 
+
+5회차 발표자 : 신지민
+
+## 5회차 과제  🎉
+
+아래와 같이 만들어주세요.
+
+**요구사항**
+- basic패키지에 있는 lombok_test를 lombok형식으로 맞춰 코드를 간결하게 만들어주세요!!
+<br>
+
+아래는 콘솔 출력값 입니다.
+```
+package gdsc.syu.study.thymeleaf.basic;
+
+public class lombok_test {
+    private String username;
+    private String userDept;
+    private int userID;
+    public String getUsername(){
+        return username;
+    }
+
+    public void setUserDept(String userDept) {
+        this.userDept = userDept;
+    }
+
+    public int getUserID() {
+        return userID;
+    }
+}
+
+
+```
+
+------
+# Su-tudy 6회차 - Servlet, JSP, MVC
+
+2022년 7월 6일
+
+참여자 : 박현서, 윤성철, 조정빈, 신지민
+
+6회차 발표자 : 김동열
+-----------
+
+## 📚6회차 과제📚
+
+**요구사항**
+1. 회원 등록하고 저장하는 기존 회원 저장 폼을 활용하여 회원 가입하기
+    * 회원 가입에 필요한 정보 = 이름, 나이
+2. 회원가입이 버튼을 누르면 로그인 페이지로 이동
+3. 로그인
+4. 로그인 후 로그인이 완료된 상태 캡쳐 (형시 자유 ex.log출력, 로그인 완료 페이지 등)
+
+### 예시
+* MvcMemberSaveServlet 中
+![img.png](./images/6_assignment_view_1.png)
+
+  새로운 viewPath로 forward할 경로 바꿈
+
+
+* login-form.jsp (로그인 폼은 자유 양식)
+```
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/homework/login" method="post">
+    이름: <input type="text" name="username" />
+    나이: <input type="text" name="age" />
+    <button type="submit">로그인</button>
+</form>
+</body>
+</html>
+```
+
+* 결과화면
+    * 로그인 성공 화면
+
+  ![img_1.png](./images/6_assignment_view_2.png)
+
+    * 로그인 실패 화면
+
+  ![img_2.png](./images/6_assignment_view_3.png)
+   
+## 💪화이팅
+Footer
+

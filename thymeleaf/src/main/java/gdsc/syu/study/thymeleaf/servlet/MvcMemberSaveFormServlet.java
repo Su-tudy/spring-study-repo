@@ -13,7 +13,7 @@ public class MvcMemberSaveFormServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/webapp/WEB-INF/views/save-form.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/save-form.jsp");
         dispatcher.forward(request, response);
     }
 }
