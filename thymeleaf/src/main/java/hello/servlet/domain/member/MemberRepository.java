@@ -17,14 +17,14 @@ public class MemberRepository {
     //싱글톤
     private static final MemberRepository instance = new MemberRepository();
 
-    //MemberRepository의 getInstance()를 통해서 instance객체 확인 가능.
-    public static MemberRepository getInstance() {
-        return instance;
-    }
-
     //싱글톤에 맞게 private으로 생성자 생성
     //왜?
     private MemberRepository(){
+    }
+
+    //MemberRepository의 getInstance()를 통해서 instance객체 확인 가능.
+    public static MemberRepository getInstance() {
+        return instance;
     }
 
     public Member save(Member member) {
