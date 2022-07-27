@@ -212,6 +212,14 @@ V4 Controller는 기본적으로 v3와 동일하지만 Modelview를 반환하지
 V5 : 핸들러 어댑터가 핸들러를 호출해 front controller에 반환
 ![image](https://user-images.githubusercontent.com/97434717/181257444-5082825d-1719-4c39-b6d7-0102f3a11d2a.png)
 
+https://bgpark.tistory.com/72
+
+//handlerMapping & handlerAdaptor
+
+https://stackoverflow.com/questions/30165625/whats-difference-between-controller-and-handler-in-spring-mvc
+
+//컨트롤러와 핸들러 정의
+
 -----------
 ## 8회차 과제  🎉
 
