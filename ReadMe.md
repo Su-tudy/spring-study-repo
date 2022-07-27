@@ -191,7 +191,7 @@ public class lombok_test {
   ---------------
  
  
- # Su-tudy 8회차 - Frontcontroller(v1-v3)
+ # Su-tudy 8회차 - Frontcontroller(v4-v5)
 
 2022년 7월 27일
 
@@ -200,21 +200,23 @@ public class lombok_test {
 8회차 발표자 : 윤성철
 
 ![image](https://user-images.githubusercontent.com/97434717/181254641-b3d0acf6-22ea-41f1-b2bc-5f66bcfebc08.png)
+
 V4 Controller는 기본적으로 v3와 동일하지만 Modelview를 반환하지 않고 ViewName만 반환한다.
 
 ---------------
-##유연한 컨트롤러
+## 유연한 컨트롤러
 **어댑터 패턴**  
 <V5 구조>
  
 이전 : Front controller controller 직접 호출
 V5 : 핸들러 어댑터가 핸들러를 호출해 front controller에 반환
+![image](https://user-images.githubusercontent.com/97434717/181257444-5082825d-1719-4c39-b6d7-0102f3a11d2a.png)
 
 -----------
-## 7회차 과제  🎉
+## 8회차 과제  🎉
 
 **요구사항**
-- Handler Adapter 인터페이스를 통해 V3 Front Controller를 구현해주세요.
+- **Handler Adapter** 인터페이스를 통해 V3 Front Controller를 구현해주세요.
 ![image](https://user-images.githubusercontent.com/97434717/181256919-585cc460-f71a-4e38-8efe-33c77bc3f927.png)
 
 
