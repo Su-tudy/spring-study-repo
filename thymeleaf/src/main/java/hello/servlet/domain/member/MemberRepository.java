@@ -7,7 +7,6 @@ import java.util.Map;
 
 /**
  * 동시성 문제가 고려되어 있지 않음, 실무에서는 ConcurrentHashMap, AtomicLong 사용 고려
- * 동시성이란,
  */
 
 public class MemberRepository {
@@ -18,14 +17,14 @@ public class MemberRepository {
     //싱글톤
     private static final MemberRepository instance = new MemberRepository();
 
-    //MemberRepository의 getInstance()를 통해서 instance객체 확인 가능.
-    public static MemberRepository getInstance() {
-        return instance;
-    }
-
     //싱글톤에 맞게 private으로 생성자 생성
     //왜?
     private MemberRepository(){
+    }
+
+    //MemberRepository의 getInstance()를 통해서 instance객체 확인 가능.
+    public static MemberRepository getInstance() {
+        return instance;
     }
 
     public Member save(Member member) {
