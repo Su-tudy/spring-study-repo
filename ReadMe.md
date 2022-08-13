@@ -227,7 +227,7 @@ https://stackoverflow.com/questions/30165625/whats-difference-between-controller
 - **Handler Adapter** 인터페이스를 통해 V3 Front Controller를 구현해주세요.
 ![image](https://user-images.githubusercontent.com/97434717/181256919-585cc460-f71a-4e38-8efe-33c77bc3f927.png)
 
- # Su-tudy 9회차 - 스프링MVC 전체구조, 핸들러 매핑과 핸드러 어댑터, 뷰리졸버
+ # Su-tudy 9회차 - 스프링MVC구조
 
 2022년 8월 3일
 
@@ -238,6 +238,8 @@ https://stackoverflow.com/questions/30165625/whats-difference-between-controller
 <Spring MVC 구조>
 
 ![MVC구조](https://user-images.githubusercontent.com/74054487/184502908-757c595d-564a-454a-8191-2357e2dcdeeb.png)
+
+https://foil-crawdad-ff3.notion.site/spring-session-9-acfc196bf7ea440a820de517af444112
 
 
 
