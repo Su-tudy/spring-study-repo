@@ -256,10 +256,10 @@ https://foil-crawdad-ff3.notion.site/spring-session-9-acfc196bf7ea440a820de517af
 **요구사항**
 
 -게시물 등록하고 저장하기<br>
-    * 게시물 등록 필요한 정보 = 제목, 내용, 글쓴이
--하나의 Controller을 사용하여 게시물 등록, 리스트 확인이 가능하게 할 것.
+    * 게시물 등록 필요한 정보 = 제목, 내용, 글쓴이<br>
+-하나의 Controller을 사용하여 게시물 등록, 리스트 확인이 가능하게 할 것.<br>
     * Controller 이름은 BoardController로 한다.
--게시글 등록은  http://localhost:8080/board/form 에서 한다.
+-게시글 등록은  http://localhost:8080/board/form 에서 한다.<br>
 -등록한 게시글은 http://localhost:8080/board/list 에서 확인할 수 있게 한다.
 
 
