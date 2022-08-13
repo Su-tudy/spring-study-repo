@@ -161,7 +161,7 @@ public class lombok_test {
    
 ## 💪화이팅
 
-
+-----------
 # Su-tudy 7회차 - Frontcontroller(v1-v3)
 
 2022년 7월 14일
@@ -227,13 +227,14 @@ https://stackoverflow.com/questions/30165625/whats-difference-between-controller
 - **Handler Adapter** 인터페이스를 통해 V3 Front Controller를 구현해주세요.
 ![image](https://user-images.githubusercontent.com/97434717/181256919-585cc460-f71a-4e38-8efe-33c77bc3f927.png)
 
+-----------
  # Su-tudy 9회차 - 스프링MVC구조
 
 2022년 8월 3일
 
 참여자 : 김동열, 박현서, 윤성철, 조정빈, 신지민
 
-8회차 발표자 : 조정빈
+9회차 발표자 : 조정빈
 
 <Spring MVC 구조>
 
@@ -241,5 +242,23 @@ https://stackoverflow.com/questions/30165625/whats-difference-between-controller
 
 https://foil-crawdad-ff3.notion.site/spring-session-9-acfc196bf7ea440a820de517af444112
 
+-----------
+# Su-tudy 10회차 - 스프링MVC
+
+2022년 8월 10일
+
+참여자 : 김동열, 박현서, 조정빈, 신지민
+
+10회차 발표자 : 조정빈
+
+## 10회차 과제  🎉
+
+**요구사항**
+1.게시물 등록하고 저장하기
+    * 게시물 등록 필요한 정보 = 제목, 내용, 글쓴이
+2.하나의 Controller을 사용하여 게시물 등록, 리스트 확인이 가능하게 할 것.
+    * Controller 이름은 BoardController로 한다.
+3.게시글 등록은  http://localhost:8080/board/form 에서 한다.
+4.등록한 게시글은 http://localhost:8080/board/list 에서 확인할 수 있게 한다.
 
 
