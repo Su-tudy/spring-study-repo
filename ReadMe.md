@@ -262,4 +262,51 @@ https://foil-crawdad-ff3.notion.site/spring-session-9-acfc196bf7ea440a820de517af
 -게시글 등록은  http://localhost:8080/board/form 에서 한다.<br>
 -등록한 게시글은 http://localhost:8080/board/list 에서 확인할 수 있게 한다.
 
+----------
+# Su-tudy 11회차 - 스프링MVC
+
+2022년 8월 24일
+
+참여자 : 김동열, 박현서, 조정빈, 신지민, 윤성철
+
+10회차 발표자 : 윤성철
+
+## @PathVariable, @RequestParam, @RequestBody, @ResponseBody의 차이
+
+  * @PathVariable
+
+  -localhost:8080/users/**charlie**
+
+  ```
+  @RequestMapping("/users/{userid}", method=RequestMethod.GET)
+  public String getUser(@PathVariable String userId) {
+  }
+  ```
+
+  * @RequestParam
+
+  -localhost:8080/users?**userid=charlie**
+
+  ```
+  @GetMapping("/api/foos")
+  @ResponseBody
+  public String getFoos(@RequestParam String id) {
+      return "ID: " + id;
+  }
+  ```
+
+  * @ResquestBody, @ResponseBody
+  
+    * HTTP 요청의 몸체(body)를 자바 객체로 받을 수 있게 해준다.
+  
+    * 요청 HTTP Content-Type 헤더에 선언된 데이터 형식에 맞게 메소드 리턴값을 반환한다.
+
+## 11회차 과제  🎉
+
+  *HTML Form가 취급하는 메소드는 GET, POST 두가지방식뿐임
+    *PATCH, PUT, DELETE 메소드는 form을 통해 데이터를 입력받아 어떻게 처리할까?
+    
+    1. 위 3가지 방식 중 하나를 선택해 thymeleaf를 통해 html form으로 데이터를 입력받습니다.
+    2. 입력받는 데이터는 회원 나이, 회원 성별입니다. -patch, put 메소드의 경우
+    3. submit을 통해 controller로 넘어온 데이터를 해당 메소드로 처리합니다.
 
