@@ -45,4 +45,16 @@ public class MappingController {
         log.info("mappingPath userId={}, orderId={}", userId, orderId);
         return "pathVaribale 다중사용 ok";
     }
+
+    @PostMapping(value = "/mapping-consume", consumes = "application/json")
+    public String mappingConsumes() {
+        log.info("mappingConsumes");
+        return "ok";
+    }
+
+    @PostMapping(value = "/mapping-produce", produces = "text/html")
+    public String mappingProduces() {
+        log.info("mappingProduces");
+        return "ok";
+    }
 }
