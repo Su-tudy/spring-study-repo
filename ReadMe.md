@@ -310,3 +310,19 @@ https://foil-crawdad-ff3.notion.site/spring-session-9-acfc196bf7ea440a820de517af
     2. 입력받는 데이터는 회원 나이, 회원 성별입니다. -patch, put 메소드의 경우
     3. submit을 통해 controller로 넘어온 데이터를 해당 메소드로 처리합니다.
 
+
+-----------
+# Su-tudy 12회차 - 스프링MVC
+
+2022년 9월 7일
+
+참여자 : 김동열, 박현서, 조정빈, 신지민
+
+12회차 발표자 : 신지민
+
+## 12회차 과제  🎉
+
+1. basic [SyuData] → lombok @Data 사용해 바인딩 객체(String username,  int age)만들기
+2. @ModelAtrribute 생략하기
+    - String, int, Integer 같은 단순 타입 = @RequestParam
+    - 나머지 = @ModelAttribute (argument resolver 로 지정해둔 타입 이외)
